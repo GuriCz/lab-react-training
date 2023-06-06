@@ -104,3 +104,15 @@
   background-color: blue;
   color: white;
 }
+
+.even{
+  background-color: red;
+}
+
+.table-container{
+  margin: 25px;
+}
+
+.blue-background {
+  background-color: blue;
+}

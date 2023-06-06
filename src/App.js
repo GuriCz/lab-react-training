@@ -7,6 +7,13 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -45,6 +52,7 @@ function App() {
             picture="https://randomuser.me/api/portraits/women/44.jpg"
           />
         </div>
+        <br></br>
       </div>
       <Greetings lang="en">John</Greetings>
       <Greetings lang="es">María</Greetings>
@@ -57,6 +65,7 @@ function App() {
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
+      <br></br>
       <div className="containerCredit">
         <CreditCard
           type="Visa"
@@ -91,12 +100,14 @@ function App() {
           color="white"
         />
       </div>
+      <br></br>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+      <br></br>
       <div className="page-container">
         <div className="id-card-car">
           <DriverCard
@@ -119,6 +130,29 @@ function App() {
           />
         </div>
       </div>
+      <br></br>
+      <LikeButton />
+      <br></br>
+      <ClickablePicture />
+      <br></br>
+      <Dice />
+      <br></br>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+      <br></br>
+      <div className="table-container">
+        <NumbersTable limit={90}/>
+        </div>
+        <br></br>
+      <FaceBook profiles/>
+      <br></br>
+      <SignupPage />
     </div>
   );
 }
